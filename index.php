@@ -1,5 +1,7 @@
 <?php 
 
+declare(strict_types = 1);
+
 // include 'includes/autoloader.inc.php';
 include 'vendor/autoload.php';
 
@@ -20,9 +22,12 @@ $house1->setNumber(802);
 echo $house1->getAddress();*/
 
 /* Static properties and methods */
-echo Person\Person::$drinkingAge;
+/*echo Person\Person::$drinkingAge;
 
 Person\Person::setDrinkingAge(25);
-echo Person\Person::getDrinkingAge();
+echo Person\Person::getDrinkingAge();*/
+
+$person = new Person\Person;
+$person->setName('Paty');
 
 ?>

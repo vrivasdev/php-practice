@@ -12,7 +12,7 @@ class Person {
         $this->age = $age;
     }
 
-    public function setName($name) {
+    public function setName(string $name) {
         $this->name = $name;
     }
 
