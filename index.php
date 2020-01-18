@@ -1,18 +1,21 @@
 <?php 
-spl_autoload_register('myAutoLoader');
 
-function myAutoLoader($className) {
-    $path = "classes/";
-    $extension = ".class.php";
-    $fullPath = $path . $className . $extension;    
+include 'includes/autoloader.inc.php';
 
-    include_once($fullPath);
-}
+$person1 = new Person\Person();
 
-$person1 = new Person('Diego', 30);
+$person1->setName('Diego');
+$person1->setAge(20);
+
 echo $person1->getPerson();
 
-$house1 = new House('Av. Bolivar', 300);
+echo "<br/>";
+
+$house1 = new House();
+
+$house1->setStreet('Diego');
+$house1->setNumber(802);
+
 echo $house1->getAddress();
 
 ?>
