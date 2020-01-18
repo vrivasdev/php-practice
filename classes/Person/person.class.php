@@ -5,6 +5,7 @@ namespace Person;
 class Person {
     public $name;
     public $age;
+    public static $drinkingAge = 21;
 
     public function __constuct($name, $age) {
         $this->name = $name;
@@ -21,6 +22,14 @@ class Person {
 
     public function getPerson() {
         return $this->name . ' ' . $this->age;
+    }
+
+    public function getDrinkingAge() {
+        return self::$drinkingAge;
+    }
+
+    public static function setDrinkingAge($age) {
+        self::$drinkingAge = $age;
     }
 }
 
