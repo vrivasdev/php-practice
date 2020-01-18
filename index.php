@@ -1,6 +1,7 @@
 <?php 
 
-include 'includes/autoloader.inc.php';
+// include 'includes/autoloader.inc.php';
+include 'vendor/autoload.php';
 
 $person1 = new Person\Person();
 
