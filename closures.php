@@ -8,6 +8,10 @@ $students = [
     [ 'id' => 6, 'name' => 'Daniel', 'grade' => 8]
 ];
 
-$approved = array_filter($students, function($student) {
-    return $student['grade'] >= 10;
+$limit = 10;
+
+$approved = array_filter($students, function($student) use ($limit){
+    return $student['grade'] >= $limit;
 });
+
+echo var_dump($approved);
