@@ -2,7 +2,7 @@
 
 trait Football {
     public function isGol() {
-        echo 'GOOOOO!';
+        echo 'GOOOOO!' . $this->getName();
     }
     public function isPenalty() {
         echo 'Penalty';

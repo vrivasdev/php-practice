@@ -2,5 +2,5 @@
 
 include 'player.class.php';
 
-$player = new Player();
+$player = new Player('Victor');
 $player->action();
